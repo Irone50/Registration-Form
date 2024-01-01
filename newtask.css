@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: seagreen;
+    padding: 20px;
+}
+.header{
+    position: relative;
+    /* max-width: 700px; */
+    width: 600px;
+    background-color: antiquewhite;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);
+}
+.header h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+.header .form{
+    margin-top: 20px;
+}
+.form .input-box{
+    width: 100%;
+    margin-top: 10px;
+}
+.input-box label{
+    color: #333;
+}
+.form .input-box input{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 8px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.form .join{
+    display: flex;
+    column-gap:20px; 
+}
+form .gender-input .gender{
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.form .gender-input{
+    padding-top: 10px;
+    font-size: 1rem;
+}
+.form select{
+    position: relative;
+    margin-top: 20px;
+    padding: 8px 0;
+    border: 1px solid #fff;
+    position: relative;
+    font-size: 1rem;
+    color: #333;
+    padding-right: 150px;
+    border-radius: 5px;
+    outline: none;
+}
+.form .coun-post{
+    display: flex;
+    column-gap: 20px;
+}
+.form .btn{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: seagreen;
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+    background-color: yellowgreen;
+}
+
+/* Resonsive */
+@media screen and (max-width: 500px) {
+    .form .join{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 500px) {
+    .form .coun-post{
+        flex-wrap: wrap;
+    }
+}
